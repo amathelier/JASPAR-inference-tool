@@ -11,6 +11,7 @@ RUN conda env create -f conda/environment.runtime.yml && \
     conda clean -afy
 
 ENV PATH=/opt/conda/envs/JASPAR-profile-inference/bin:$PATH
+ENV MPLCONFIGDIR=/tmp
 
 # Copy source
 COPY __init__.py infer_profile.py infer_homolog.py make_html.py ./
