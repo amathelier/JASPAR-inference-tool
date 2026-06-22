@@ -3,7 +3,8 @@
 import argparse
 from Bio import SearchIO
 from Bio.SeqRecord import SeqRecord
-from Bio.SubsMat.MatrixInfo import blosum62
+from Bio.Align import substitution_matrices
+blosum62 = substitution_matrices.load("BLOSUM62")
 import copy
 from functools import partial
 import json
@@ -49,13 +50,15 @@ def parse_args():
         help="input sequence(s) in FASTA format")
 
     # Optional args
-    parser.add_argument("--dummy-dir", default="/tmp/", metavar="DIR", 
+    parser.add_argument("--dummy-dir", default="/tmp/", metavar="DIR",
         help="dummy directory (default = /tmp/)")
     parser.add_argument("--files-dir", default=files_dir, metavar="DIR",
         help="files directory from get_files.py (default = ./files/)")
     # # parser.add_argument("--models-dir", default=models_dir)
     parser.add_argument("--output-file", metavar="FILE",
         help="output file (default = STDOUT)")
+    parser.add_argument("--html-output", metavar="FILE",
+        help="write an HTML visualization report to FILE")
     parser.add_argument("--threads", default=1, metavar="INT", type=int,
         help="number of threads to use (default = 1)")
     parser.add_argument("-w", "--warnings", action="store_true",
@@ -85,10 +88,12 @@ def main():
 
     # Infer profiles
     infer_profiles(args.sequences, args.dummy_dir, args.files_dir,
-        args.output_file, args.threads, args.latest, args.rost, args.taxon)
+        args.output_file, args.threads, args.latest, args.rost, args.taxon,
+        args.html_output)
 
 def infer_profiles(fasta_file, dummy_dir="/tmp/", files_dir=files_dir,
-    output_file=None, threads=1, latest=False, n=5, taxons=Jglobals.taxons):
+    output_file=None, threads=1, latest=False, n=5, taxons=Jglobals.taxons,
+    html_output=None):
 
     # Initialize
     base_name = os.path.basename(__file__)
@@ -119,6 +124,7 @@ def infer_profiles(fasta_file, dummy_dir="/tmp/", files_dir=files_dir,
     Jglobals.write(dummy_file, "\t".join(columns))
 
     # Infer SeqRecord profiles
+    all_inferences = []
     kwargs = {"total": len(seq_records), "bar_format": bar_format}
     pool = Pool(min([threads, len(seq_records)]))
     p = partial(infer_SeqRecord_profiles, cisbp=cisbp, dummy_dir=dummy_dir,
@@ -126,10 +132,11 @@ def infer_profiles(fasta_file, dummy_dir="/tmp/", files_dir=files_dir,
     for inferences in tqdm(pool.imap(p, seq_records), **kwargs):
         for inference in inferences:
             Jglobals.write(dummy_file, "\t".join(map(str, inference)))
+            all_inferences.append(inference)
     pool.close()
     pool.join()
 
-    # Write
+    # Write TSV
     if output_file:
         shutil.copy(dummy_file, output_file)
     else:
@@ -137,6 +144,22 @@ def infer_profiles(fasta_file, dummy_dir="/tmp/", files_dir=files_dir,
             # For each line...
             for line in f:
                 Jglobals.write(None, line.strip("\n"))
+
+    # Generate HTML report
+    if html_output and all_inferences:
+        try:
+            from make_html import generate_html_report
+        except ImportError as e:
+            sys.stderr.write(
+                "\nCould not generate HTML report (%s).\n"
+                "Rebuild the conda environment to install the required packages:\n"
+                "  conda deactivate\n"
+                "  conda env remove -n JASPAR-profile-inference\n"
+                "  conda env create -f conda/environment.yml\n"
+                "  conda activate JASPAR-profile-inference\n" % e
+            )
+        else:
+            generate_html_report(all_inferences, html_output)
 
     # Remove dummy dir
     shutil.rmtree(dummy_dir)
@@ -647,10 +670,11 @@ def __score(aa1, aa2, similarity="identity"):
         elif aa1 == "-" or aa2 == "-":
             return(-4)
         else:
-            if (aa1, aa2) in blosum62:
-                return(blosum62[(aa1, aa2)])
-            else:
-                return(blosum62[(aa2, aa1)])
+            try:
+                return int(blosum62[aa1][aa2])
+            except (KeyError, IndexError):
+                return 0
+    return 0
 
 
 #-------------#

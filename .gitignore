@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.pyo
+*.html
+.dir_bash_history
+files/.dir_bash_history

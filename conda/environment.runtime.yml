@@ -4,16 +4,14 @@ channels:
   - conda-forge
   - defaults
 dependencies:
+  - python=3.10
   - biopython>=1.80
   - blast=2.9.0
-  - gitpython
   - hmmer=3.2.1
   - logomaker
   - matplotlib
   - numpy
   - pandas
-  - python=3.10
-  - python-coreapi
   - requests
   - tqdm
   - pip:
