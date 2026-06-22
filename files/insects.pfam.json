@@ -58,6 +58,36 @@
             2.9e-23
         ]
     ],
+    "A0A0B4KGA3": [
+        [
+            "zf-C2H2",
+            "YCCPECQMAYPDRSLIEQHVISH",
+            303,
+            325,
+            8.9e-06
+        ],
+        [
+            "zf-C2H2",
+            "FVCDICNAALKRKDHLTRHKLSH",
+            331,
+            353,
+            3.2e-07
+        ],
+        [
+            "zf-C2H2",
+            "HVCNICMKSFKRKEQLTLHIVIH",
+            359,
+            381,
+            1.6e-07
+        ],
+        [
+            "zf-C2H2",
+            "HVCIECGKGFYRKDHLRKHTRSH",
+            387,
+            409,
+            4.7e-07
+        ]
+    ],
     "A0A0B4KHC8": [
         [
             "zf-C2H2",
@@ -340,6 +370,134 @@
             3.5e-12
         ]
     ],
+    "O61360": [
+        [
+            "zf-C2H2",
+            "HVCDICGKMFQFRYQLIVHRRYH",
+            221,
+            243,
+            3.4e-07
+        ],
+        [
+            "zf-C2H2",
+            "FMCQVCGQGFTTSQDLTRHGKIH",
+            249,
+            271,
+            3.4e-07
+        ],
+        [
+            "zf-C2H2",
+            "FTCIVCFNVFANNTSLERHMKRH",
+            277,
+            299,
+            1.1e-05
+        ],
+        [
+            "zf-C2H2",
+            "FACTICQKTFARKEHLDNHFRSH",
+            305,
+            327,
+            4e-07
+        ],
+        [
+            "zf-C2H2",
+            "FRCQYCAKTFTRKEHMVNHVRKH",
+            333,
+            355,
+            1.3e-07
+        ],
+        [
+            "zf-C2H2",
+            "HRCDICKKSFTRKEHYVNHYMWH",
+            361,
+            383,
+            4.8e-07
+        ],
+        [
+            "zf-C2H2",
+            "HQCDVCGKKYTRKEHLANHMRSH",
+            389,
+            411,
+            5.1e-09
+        ],
+        [
+            "zf-C2H2",
+            "FRCEICGKSFSRKEHFTNHILWH",
+            417,
+            439,
+            1.1e-09
+        ],
+        [
+            "zf-C2H2",
+            "HRCDFCSKTFTRKEHLLNHVRQH",
+            445,
+            467,
+            6.6e-07
+        ],
+        [
+            "zf-C2H2",
+            "HRCSYCMKTFTRKEHLVNHIRQH",
+            473,
+            495,
+            4.1e-07
+        ],
+        [
+            "zf-C2H2",
+            "FKCTYCTKAFTRKDHMVNHVRQH",
+            501,
+            523,
+            3.1e-08
+        ],
+        [
+            "zf-C2H2",
+            "HKCTYCTKTFTRKEHLTNHVRQH",
+            529,
+            551,
+            3.5e-08
+        ],
+        [
+            "zf-C2H2",
+            "HRCSYCKKTFTRKEHLTNHVRLH",
+            557,
+            579,
+            4.3e-08
+        ],
+        [
+            "zf-C2H2",
+            "HKCEYCQKTFTRKEHLNNHMRQH",
+            585,
+            607,
+            5.9e-09
+        ],
+        [
+            "zf-C2H2",
+            "HCCNVCNKPFTRKEHLINHMSRcH",
+            613,
+            636,
+            5.8e-07
+        ],
+        [
+            "zf-C2H2",
+            "FTCETCGKSFPLKGNLLFHQRSH",
+            642,
+            664,
+            7.8e-07
+        ],
+        [
+            "zf-C2H2",
+            "FACEKCPKNFICKGHLVSHMRSH",
+            674,
+            696,
+            6.2e-06
+        ],
+        [
+            "zf-C2H2",
+            "HACTLCSKAFVERGNLKRHMKMnH",
+            702,
+            725,
+            2.2e-07
+        ]
+    ],
     "O61640": [
         [
             "Homeobox",
@@ -451,6 +609,29 @@
             455,
             511,
             2.3e-25
+        ]
+    ],
+    "P04197": [
+        [
+            "Myb_DNA-binding",
+            "k--RWSKSEDVLLKQLVETHGEN-WEIIGPHFKDRLEQQVQQRWAKVL",
+            86,
+            130,
+            8e-12
+        ],
+        [
+            "Myb_DNA-binding",
+            "KGPWTRDEDDMVIKLVRNFGPKKWTLIARYLNGRIGKQCRERWHNHL",
+            136,
+            182,
+            1.5e-19
+        ],
+        [
+            "Myb_DNA-binding",
+            "KTAWTEKEDEIIYQAHLELGNQ-WAKIAKRLPGRTDNAIKNHWN---s",
+            188,
+            231,
+            1e-19
         ]
     ],
     "P05084": [
@@ -584,6 +765,101 @@
             367,
             423,
             2e-25
+        ]
+    ],
+    "P07664": [
+        [
+            "zf-C2H2",
+            "-ECTTCGKVYNSWYQLQKHISEeH",
+            195,
+            217,
+            3.4e-09
+        ],
+        [
+            "zf-C2H2",
+            "HICPICGVIRRDEEYLELHMNLH",
+            223,
+            245,
+            3.2e-05
+        ],
+        [
+            "zf-C2H2",
+            "-QCRYCPKSFSRPVNTLRHMRMH",
+            252,
+            273,
+            8.9e-09
+        ],
+        [
+            "zf-C2H2",
+            "YQCEKCGLRFSQDNLLYNHRLRH",
+            279,
+            301,
+            2.4e-06
+        ],
+        [
+            "zf-C2H2",
+            "--CSICNVSFKSRKTFNHHTLIH",
+            310,
+            330,
+            9.7e-06
+        ],
+        [
+            "zf-C2H2",
+            "HYCSVCPKSFTERYTLKMHMKTH",
+            337,
+            359,
+            6.1e-08
+        ],
+        [
+            "zf-C2H2",
+            "--CLICNTNFENKKELEHHLQFdH",
+            407,
+            428,
+            3.8e-05
+        ]
+    ],
+    "P07665": [
+        [
+            "zf-C2H2",
+            "-PCHICGEMFSSQEVLERHIK--",
+            172,
+            191,
+            1.5e-07
+        ],
+        [
+            "zf-C2H2",
+            "-TCNVCGLKVKDDEVLDLHMNLH",
+            202,
+            223,
+            0.0019
+        ],
+        [
+            "zf-C2H2",
+            "-ECRYCDKKFSHKRNVLRHMEVH",
+            230,
+            251,
+            2e-07
+        ],
+        [
+            "zf-C2H2",
+            "YQCDKCGERFSLSWLMYNHLMRH",
+            257,
+            279,
+            5.9e-06
+        ],
+        [
+            "zf-C2H2",
+            "--CEVCHQQFKTKRTYKHHLRTH",
+            288,
+            308,
+            6.2e-06
+        ],
+        [
+            "zf-C2H2",
+            "YPCPDCEKSFVDKYTLKVHKRVH",
+            315,
+            337,
+            6.2e-10
         ]
     ],
     "P08044": [
@@ -811,8 +1087,8 @@
         [
             "Homeobox",
             "g---RTNFTNKQLTELEKEFHFNRYLTRARRIEIANTLQLNETQVKIWFQNRRMKQKK",
-            510,
-            564,
+            504,
+            558,
             1e-25
         ]
     ],
@@ -916,6 +1192,15 @@
             5.2e-35
         ]
     ],
+    "P13098": [
+        [
+            "HLH",
+            "QKVKKPMLERQRRARMNKCLDNLKTLVAEL-RGDDGIlrMDKAEMLESAVIFMRQ--",
+            11,
+            64,
+            7.6e-16
+        ]
+    ],
     "P14003": [
         [
             "HLH",
@@ -1006,8 +1291,8 @@
         [
             "Homeobox",
             "KRIRTAFSPSQLLKLEHAFESNQYVVGAERKALAQNLNLSETQVKVWFQNRRTKHKR",
-            392,
-            448,
+            389,
+            445,
             3.3e-25
         ]
     ],
@@ -2392,57 +2677,6 @@
             1.8e-27
         ]
     ],
-    "Q8IGP5": [
-        [
-            "zf-C2H2",
-            "FKCDVCSDMFPHLALLNAHKRMH",
-            127,
-            149,
-            4.1e-06
-        ],
-        [
-            "zf-C2H2",
-            "FSCNICGGLFSRYSSLWSHKKLH",
-            360,
-            382,
-            1.8e-06
-        ],
-        [
-            "zf-C2H2",
-            "YKCSICGLAFAKAVYLKNHARIH",
-            388,
-            410,
-            1.1e-07
-        ],
-        [
-            "zf-C2H2",
-            "YKCQTCGMQFSQSPHLKNHERTH",
-            416,
-            438,
-            2.2e-08
-        ],
-        [
-            "zf-C2H2",
-            "YVCGVCDKGFARHATLWNHRRIH",
-            444,
-            466,
-            2.3e-08
-        ],
-        [
-            "zf-C2H2",
-            "YKCEICGSAFSQAAHLKNHAKVH",
-            472,
-            494,
-            2.6e-08
-        ],
-        [
-            "zf-C2H2",
-            "YKCEICSAAFADRFALKRHRGIH",
-            500,
-            522,
-            6.7e-07
-        ]
-    ],
     "Q8IMA8": [
         [
             "HMG_box",
@@ -2830,6 +3064,57 @@
             1.2e-23
         ]
     ],
+    "Q9V9N4": [
+        [
+            "zf-C2H2",
+            "FKCDVCSDMFPHLALLNAHKRMH",
+            127,
+            149,
+            4.1e-06
+        ],
+        [
+            "zf-C2H2",
+            "FSCNICGGLFSRYSSLWSHKKLH",
+            360,
+            382,
+            1.8e-06
+        ],
+        [
+            "zf-C2H2",
+            "YKCSICGLAFAKAVYLKNHARIH",
+            388,
+            410,
+            1.1e-07
+        ],
+        [
+            "zf-C2H2",
+            "YKCQTCGMQFSQSPHLKNHERTH",
+            416,
+            438,
+            2.2e-08
+        ],
+        [
+            "zf-C2H2",
+            "YVCGVCDKGFARHATLWNHRRIH",
+            444,
+            466,
+            2.3e-08
+        ],
+        [
+            "zf-C2H2",
+            "YKCEICGSAFSQAAHLKNHAKVH",
+            472,
+            494,
+            2.6e-08
+        ],
+        [
+            "zf-C2H2",
+            "YKCEICSAAFADRFALKRHRGIH",
+            500,
+            522,
+            6.7e-07
+        ]
+    ],
     "Q9VA17": [
         [
             "HMG_box",
@@ -2924,6 +3209,15 @@
             200,
             251,
             1.3e-24
+        ]
+    ],
+    "Q9VDF1": [
+        [
+            "DM",
+            "RVPKCARCRNHGIISELRGHKKLCTYKNCKCAKCVLIFERQRIMAAQ",
+            39,
+            85,
+            5.4e-25
         ]
     ],
     "Q9VDH9": [
@@ -3126,6 +3420,15 @@
             2.3e-25
         ]
     ],
+    "Q9VGJ5": [
+        [
+            "HLH",
+            "QRRAANIRERRRMFNLNEAFDKLRRKVPTfA---YEKRLSRIETLRLAITYI----g",
+            87,
+            136,
+            4.7e-21
+        ]
+    ],
     "Q9VGZ5": [
         [
             "HLH",
@@ -3294,6 +3597,22 @@
             462,
             482,
             6.9e-09
+        ]
+    ],
+    "Q9VK71": [
+        [
+            "Pou",
+            "d--LEELEQFAKTFKQRRIKLGFTQGDVGLAMGKLYGNDFSQTTISRFEALNLSFKNMCKLKPLLQKWLEDAD",
+            685,
+            755,
+            8.4e-42
+        ],
+        [
+            "Homeobox",
+            "RKKRTSIETTVRTTLEKAFLMNCKPTSEEISQLSERLNMDKEVIRVWFCNRRQKEKR",
+            787,
+            843,
+            7.7e-21
         ]
     ],
     "Q9VLA2": [
@@ -3760,9 +4079,9 @@
         [
             "bZIP_1",
             "t---RKREIRLQKNREAARECRRKKKEYIKCLENRVAVLENQNKALIEELKSLKELYCQ------tk",
-            300,
-            357,
-            1.9e-23
+            272,
+            329,
+            1.6e-23
         ]
     ],
     "Q9VYL0": [
@@ -3842,6 +4161,15 @@
             437,
             491,
             7.7e-24
+        ]
+    ],
+    "Q9W0K7": [
+        [
+            "HTH_psq",
+            "RPETMAEAIFSVLKEGLSLSQAARKYDIPYPTFVlYANRVHNML--",
+            569,
+            612,
+            6e-18
         ]
     ],
     "Q9W0P9": [

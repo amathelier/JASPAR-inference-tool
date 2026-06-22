@@ -4,7 +4,6 @@ import argparse
 from Bio import SeqIO
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
-from Bio.Alphabet import IUPAC
 import coreapi
 from git import Repo
 import io
@@ -506,7 +505,7 @@ def __get_Pfam_alignments(taxon, out_dir=out_dir):
             pfams.setdefault(u, [])
 
             # Make seq file
-            seq = Seq(uniaccs[u][1], IUPAC.protein)
+            seq = Seq(uniaccs[u][1])
             record = SeqRecord(seq, id=u, name=u, description=u)
             __make_seq_file(record, seq_file)
 

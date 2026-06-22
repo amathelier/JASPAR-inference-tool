@@ -1,0 +1,11 @@
+.git/
+__pycache__/
+*.pyc
+version-1.0/
+examples/
+conda/environment.yml
+files/get_files.py
+files/rm_files.sh
+files/check_pfam.py
+files/**/.*.pickle
+README.md

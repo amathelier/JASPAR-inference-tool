@@ -2,10 +2,10 @@
 JASPAR profile inference tool
 """
 
-__author__ = "Oriol Fornes, Xi Zhang"
-__email__ = "oriol.fornes@gmail.com, nzhang@cmmt.ubc.ca"
+__author__ = "Anthony Mathelier, Oriol Fornes, Xi Zhang"
+__email__ = "anthony.mathelier@ncmbm.uio.no, oriol.fornes@gmail.com, nzhang@cmmt.ubc.ca"
 __organization__ = "The JASPAR Consortium"
-__version__ = "2024.3.1"
+__version__ = "2026.1.0"
 
 from Bio import SeqIO
 import gzip
@@ -24,7 +24,7 @@ class Globals(object):
     # Definitions #
     #-------------#
 
-    version = 2024
+    version = 2026
     taxons = [
         # "cnidaria",
         # "diatoms",

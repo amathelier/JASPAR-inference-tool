@@ -104,6 +104,15 @@
             2e-17
         ]
     ],
+    "P07272": [
+        [
+            "Zn_clus",
+            "TACKRCRLKKIKCDQEFPSCKRCAKLEVPCVSLD------pat",
+            32,
+            68,
+            1.9e-14
+        ]
+    ],
     "P08153": [
         [
             "zf-C2H2",
@@ -588,6 +597,45 @@
             6e-06
         ]
     ],
+    "P32607": [
+        [
+            "HLH",
+            "g---ANFKNDRKRRDKINDRIQELLSIIPKDFfrdyygnsgsndtlsestpgalglsskakgtGTKDGKPNKGQILTQAVEYISHLQ",
+            14,
+            97,
+            7.5e-23
+        ]
+    ],
+    "P32805": [
+        [
+            "zf-C2H2",
+            "YKCSfdGCEKVYNRPSLLQQHQNSH",
+            12,
+            36,
+            6.1e-09
+        ],
+        [
+            "zf-C2H2",
+            "YHCDepGCGKKFIRPCHLRVH----k",
+            42,
+            63,
+            3.3e-06
+        ],
+        [
+            "zf-C2H2",
+            "--CTLCQKRFVTNQQLRRHLNSH",
+            74,
+            94,
+            1.3e-07
+        ],
+        [
+            "zf-C2H2",
+            "-QCPykSCQKVTSFNDDLINHMLQH",
+            156,
+            179,
+            7.8e-06
+        ]
+    ],
     "P32862": [
         [
             "Zn_clus",
@@ -757,6 +805,15 @@
             6.1e-09
         ]
     ],
+    "P36631": [
+        [
+            "HMG_box",
+            "VKRPLNSFMLYRRDRQA----EIPTSNHQSISRIIGQLWRNESAQVKKYYSDLSALERQKHMLENPEYK",
+            16,
+            80,
+            9.9e-18
+        ]
+    ],
     "P38073": [
         [
             "Zn_clus",
@@ -773,6 +830,15 @@
             105,
             139,
             2.4e-12
+        ]
+    ],
+    "P38128": [
+        [
+            "SRF-TF",
+            "-IKDDRNRTVTFIKRKAGLFKKAHELSVLCQVDIAVIILGSNNTFYEY",
+            11,
+            57,
+            8.2e-26
         ]
     ],
     "P38140": [
@@ -971,6 +1037,15 @@
             16,
             51,
             5.8e-13
+        ]
+    ],
+    "P39970": [
+        [
+            "bZIP_1",
+            "-KAWKRARLLERNRIAASKCRQRKKMSQLQLQREFDQISKENTMMKKKIENYEKLVQKMKK---i",
+            383,
+            443,
+            4.8e-23
         ]
     ],
     "P40059": [
@@ -1249,6 +1324,15 @@
             5.9e-12
         ]
     ],
+    "P48383": [
+        [
+            "RFX_DNA_binding",
+            "QVFGICWLKRACEEQQDAAVQRNQIYAHYVEICNSLHIKPLNSASFGKLVRLLFPSIKTRRLGMRGHSKYHYCGIKLR-",
+            98,
+            175,
+            2.4e-37
+        ]
+    ],
     "P48743": [
         [
             "RFX_DNA_binding",
@@ -1265,6 +1349,15 @@
             85,
             117,
             1.2e-12
+        ]
+    ],
+    "P52960": [
+        [
+            "Zn_clus",
+            "-VCQACRKAKTKCDQEKPRCGRCTKQNLFCI-YDVAR---q",
+            24,
+            59,
+            1.1e-13
         ]
     ],
     "P53032": [
@@ -1775,6 +1868,54 @@
             4.1e-19
         ]
     ],
+    "Q09838": [
+        [
+            "zf-C2H2",
+            "YVCTfaGCNKRFTRAYNLKSHMNTH",
+            570,
+            594,
+            2e-10
+        ],
+        [
+            "zf-C2H2",
+            "FQCSICKKSFARQHDKRRHEQLH",
+            600,
+            622,
+            4.7e-07
+        ],
+        [
+            "zf-C2H2",
+            "FACVTCNQRFARMDALNRHYK--",
+            628,
+            648,
+            7.5e-06
+        ]
+    ],
+    "Q09926": [
+        [
+            "bZIP_1",
+            "----KRRRILERNRIAASKFRQKKKEWIKELEQTANAAFEQSKRLQLLLSQLQQEAFRLKSQ--l",
+            12,
+            70,
+            8.5e-12
+        ]
+    ],
+    "Q10134": [
+        [
+            "GATA",
+            "CSNCHKTTTSLWRRGPDNSL-LCNACGLYQKHRK--h",
+            12,
+            45,
+            2.1e-18
+        ],
+        [
+            "GATA",
+            "CQNCATTNTPLWRRDESGNP-ICNACGLYYKIHGV-",
+            172,
+            205,
+            2.7e-20
+        ]
+    ],
     "Q12041": [
         [
             "zf-C2H2",
@@ -2002,6 +2143,47 @@
             479,
             501,
             4.1e-10
+        ]
+    ],
+    "Q9HE16": [
+        [
+            "Zn_clus",
+            "-ACDSCRKQKTRCLAgsvedENRACLRCRSLNMDCS---------l",
+            25,
+            60,
+            1e-10
+        ]
+    ],
+    "Q9UTA1": [
+        [
+            "zf-C2H2",
+            "YRCTECLQGFSRPSSLKIHTYSH",
+            468,
+            490,
+            3.4e-07
+        ],
+        [
+            "zf-C2H2",
+            "FVCDyaGCGKAFNVRSNMRRHQRIH",
+            496,
+            520,
+            6e-09
+        ]
+    ],
+    "Q9UTS5": [
+        [
+            "zf-C2H2",
+            "FYCTypDCPKSFTRKEHLRRHERTH",
+            26,
+            50,
+            2.2e-09
+        ],
+        [
+            "zf-C2H2",
+            "FSCSFCNRAFARSDVLNRHVQQmH",
+            56,
+            79,
+            1.6e-06
         ]
     ]
 }

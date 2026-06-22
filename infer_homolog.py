@@ -3,7 +3,8 @@
 import argparse
 from Bio import SearchIO
 from Bio.SeqRecord import SeqRecord
-from Bio.SubsMat.MatrixInfo import blosum62
+from Bio.Align import substitution_matrices
+blosum62 = substitution_matrices.load("BLOSUM62")
 import copy
 from functools import partial
 import json
@@ -584,10 +585,11 @@ def __score(aa1, aa2, similarity="identity"):
         elif aa1 == "-" or aa2 == "-":
             return(-4)
         else:
-            if (aa1, aa2) in blosum62:
-                return(blosum62[(aa1, aa2)])
-            else:
-                return(blosum62[(aa2, aa1)])
+            try:
+                return int(blosum62[aa1][aa2])
+            except (KeyError, IndexError):
+                return 0
+    return 0
 
 
 #-------------#
