@@ -5,13 +5,22 @@ LABEL org.opencontainers.image.version="2026"
 
 WORKDIR /opt/jaspar-inference
 
-# Install conda environment (cached until environment.runtime.yml changes)
-COPY conda/environment.runtime.yml ./conda/environment.runtime.yml
-RUN conda env create -f conda/environment.runtime.yml && \
+RUN conda create -n JASPAR-profile-inference -y \
+        -c bioconda -c conda-forge -c defaults \
+        python=3.10 \
+        "biopython>=1.80" \
+        "blast=2.9.0" \
+        "hmmer=3.2.1" \
+        matplotlib-base \
+        logomaker \
+        numpy \
+        pandas \
+        requests \
+        tqdm && \
+    /opt/conda/envs/JASPAR-profile-inference/bin/pip install pyjaspar && \
     conda clean -afy
 
 ENV PATH=/opt/conda/envs/JASPAR-profile-inference/bin:$PATH
-ENV MPLCONFIGDIR=/tmp
 
 # Copy source
 COPY __init__.py infer_profile.py infer_homolog.py make_html.py ./
@@ -21,12 +30,13 @@ COPY __init__.py infer_profile.py infer_homolog.py make_html.py ./
 COPY files/ ./files/
 
 # Named wrappers on PATH so Apptainer exec (which bypasses ENTRYPOINT) can
-# call them by name. Using absolute python path avoids PATH inheritance issues.
-RUN printf '#!/bin/sh\nexec /opt/conda/envs/JASPAR-profile-inference/bin/python /opt/jaspar-inference/infer_profile.py "$@"\n' \
+# call them by name. MPLCONFIGDIR is set to /tmp if not already defined by
+# the caller, avoiding matplotlib trying to write to a read-only home dir.
+RUN printf '#!/bin/sh\nexport MPLCONFIGDIR=${MPLCONFIGDIR:-/tmp}\nexec /opt/conda/envs/JASPAR-profile-inference/bin/python /opt/jaspar-inference/infer_profile.py "$@"\n' \
         > /usr/local/bin/infer_profile && \
     printf '#!/bin/sh\nexec /opt/conda/envs/JASPAR-profile-inference/bin/python /opt/jaspar-inference/infer_homolog.py "$@"\n' \
         > /usr/local/bin/infer_homolog && \
-    printf '#!/bin/sh\nexec /opt/conda/envs/JASPAR-profile-inference/bin/python /opt/jaspar-inference/make_html.py "$@"\n' \
+    printf '#!/bin/sh\nexport MPLCONFIGDIR=${MPLCONFIGDIR:-/tmp}\nexec /opt/conda/envs/JASPAR-profile-inference/bin/python /opt/jaspar-inference/make_html.py "$@"\n' \
         > /usr/local/bin/make_html && \
     chmod +x /usr/local/bin/infer_profile /usr/local/bin/infer_homolog \
              /usr/local/bin/make_html

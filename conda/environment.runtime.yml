@@ -9,7 +9,7 @@ dependencies:
   - blast=2.9.0
   - hmmer=3.2.1
   - logomaker
-  - matplotlib
+  - matplotlib-base
   - numpy
   - pandas
   - requests
